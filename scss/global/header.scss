@@ -3,6 +3,9 @@
 .Header {
     background-color: $color-gray;
     height: 10%;
+    font-size: 1.2em;
+    font-weight: bold;
+    
 
     .container {
         display: flex;
@@ -27,7 +30,7 @@
         font-size: $finger-size;
         margin: $gutter;
 
-        @include mq("tablet") {
+        @include mq("desktop") {
             display: none;
         }
     }
@@ -36,7 +39,7 @@
         text-align: center;
         position: absolute;
         z-index: 1;
-        top: 100%;
+        top: 10%;
         background-color: $color-gray;
         width: 100vw;
         display: flex;
@@ -48,11 +51,10 @@
             &:hover{
                 transition: 0.3s;
                 font-size: 1.1em;
-                font-weight: bold;
             }
         }
 
-        @include mq("tablet") {
+        @include mq("desktop") {
             position: relative;
             flex-direction: row;
             width: auto;
@@ -65,7 +67,7 @@
 
     .menuShow{
         display: none;
-        @include mq("tablet") {
+        @include mq("desktop") {
             display: block;
         }
     }
