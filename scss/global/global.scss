@@ -5,11 +5,26 @@ body{
 }
 
 .container{
-    max-width: $width;
     margin-right: auto;
     margin-left: auto;
+    max-width: $width-resp;
+    @include mq("tablet") {
+        max-width: $width;
+    }
 }
 
 a{
     color: #fff;
+}
+
+.btn{
+    margin: 15%;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: $color-btn-bg;
+    i{
+        padding-right: 6px;
+    }
 }

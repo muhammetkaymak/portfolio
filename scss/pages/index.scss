@@ -1,0 +1,28 @@
+.Home{
+    text-align: center;
+
+    &-Showcase{
+        display: flex;
+        flex-direction: column-reverse;
+        line-height: 3em;
+
+        &-photo{
+            padding-top: 15%;
+            padding-bottom: 15%;
+            img{
+                height: 240px;
+                clip-path: circle(50%);
+            }
+        }
+    }
+
+    &-helper{
+        position: absolute;
+        top: 100%;
+
+        &-text{
+            color: $color-light-gray;
+        }
+    }
+    
+}
