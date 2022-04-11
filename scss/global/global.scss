@@ -1,0 +1,15 @@
+body{
+    font-family: $font-family;
+    background-color: $color-dark-gray;
+    color: #fff;
+}
+
+.container{
+    max-width: $width;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a{
+    color: #fff;
+}
