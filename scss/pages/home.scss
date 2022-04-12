@@ -1,8 +1,8 @@
 .Home {
-    height: 100vh;
+    min-height: 90vh;
 
     .container {
-        padding-top: 10%;
+        padding-top: 5%;
     }
 
     &-showcase {
@@ -51,6 +51,27 @@
                 @include mq("desktop") {
                     height: 400px;
                 }
+            }
+        }
+    }
+
+    &-button{
+        margin-top: 30%;
+
+        @include mq("desktop"){
+            margin-top: 10%;
+        }
+        button{
+            background-color: transparent;
+            color: #fff;
+            i{
+                padding-inline: 20px;
+            }
+
+            @include mq("desktop"){
+                i{
+                    padding-inline-end: 10px;
+                }    
             }
         }
     }

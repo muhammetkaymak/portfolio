@@ -9,7 +9,7 @@ body {
     margin-left: auto;
     max-width: $width-resp;
 
-    @include mq("tablet") {
+    @include mq("desktop") {
         max-width: $width;
     }
 }
