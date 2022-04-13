@@ -1,42 +1,174 @@
-.Work{
-    &-one{
-        display: block;
-        @include mq("desktop"){
-            display: flex;
-            justify-content: space-between;
-        }
-        &-column1{
-            &-img1{
-                background: url('https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80');
-                margin-bottom: 30px;
-            }
-            &-img2{
-                background: url('https://images.unsplash.com/photo-1587355760421-b9de3226a046?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
-            }
-        }
-        &-column2{
-            margin-top: 30px;
-            @include mq("desktop"){
-                margin-top: 120px;
-            }
-            &-img3{
-                background: url('https://images.unsplash.com/photo-1609921212029-bb5a28e60960?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80');
-                margin-bottom: 30px;
-            }
-            &-img4{
-                background: url('https://images.unsplash.com/photo-1547027072-332f09bd6bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
-            }
-        }
-    }
-}
+// .Work {
+//     &-one {
+//         margin-bottom: 150px;
 
-.img{
-    height: 600px;
-    width: 366px;
-    @include mq("desktop"){
-        height: 888px;
-        width: 612px;
+//         @include mq("desktop") {
+//             display: flex;
+//             margin-bottom: 250px;
+//         }
+
+//         img {
+//             width: 366px;
+//             height: 600px;
+//             border-radius: 5px;
+//             margin-bottom: 16px;
+//             object-fit: cover;
+
+//             @include mq("desktop") {
+//                 width: 612px;
+//                 height: 888px;
+//             }
+//         }
+
+//         &-imgs2 {
+//             @include mq("desktop") {
+//                 margin-top: 140px;
+//             }
+//         }
+//     }
+
+//     &-two {
+//         @include mq("desktop") {
+//             margin-bottom: 250px;
+//         }
+
+//         h2 {
+//             text-align: center;
+//             margin: 2.5em;
+
+//             @include mq("desktop") {
+//                 font-size: 2.3em;
+
+//             }
+//         }
+
+//         &-imgs {
+//             display: block;
+
+//             @include mq("desktop") {
+//                 display: flex;
+//                 justify-content: space-around;
+
+//             }
+//         }
+
+//         img {
+//             height: 366px;
+//             width: 366px;
+//             border-radius: 5px;
+//             margin-bottom: 16px;
+//             object-fit: cover;
+
+//             @include mq("desktop") {
+//                 height: 408px;
+//                 width: 400px;
+//             }
+//         }
+//     }
+
+//     &-three {
+//         &-imgs {
+//             display: flex;
+//             justify-content: space-around;
+
+//             img {
+//                 height: 560px;
+//                 width: 400px;
+//             }
+//         }
+//     }
+// }
+
+.Works {
+    article {
+        margin-bottom: 150px;
+
+        @include mq("desktop") {
+            margin-bottom: 250px;
+        }
     }
-    background-size: cover;
-    border-radius: 5px;
+
+    h2 {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 34px;
+
+        @include mq("desktop") {
+            margin-bottom: 76px;
+        }
+    }
+
+    img {
+        border-radius: 5px;
+        object-fit: cover;
+    }
+
+    &-work {
+        &-one {
+            @include mq("desktop") {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            img {
+                height: 600px;
+                width: 366px;
+                margin-bottom: $gutter;
+
+                @include mq("desktop") {
+                    height: 888px;
+                    width: 612px;
+                }
+            }
+
+            &-imgs2 {
+                @include mq("desktop") {
+                    margin-top: 140px;
+                }
+            }
+        }
+
+        &-two {
+            &-imgs {
+                @include mq("desktop") {
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+
+            img {
+                height: 366px;
+                width: 366px;
+                margin-bottom: $gutter;
+
+                @include mq("desktop") {
+                    height: 408px;
+                    width: 400px;
+                }
+            }
+        }
+
+        &-three {
+            &-imgs {
+                @include mq("desktop") {
+                    display: flex;
+                    justify-content: space-around;
+                }
+
+                img {
+                    height: 600px;
+                    width: 366px;
+                    margin-bottom: 24px;
+
+                    @include mq("desktop") {
+                        height: 560px;
+                        width: 400px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+
+        }
+    }
 }

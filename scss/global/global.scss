@@ -25,6 +25,7 @@ a {
     font-size: 1.2em;
     border-radius: 4px;
     background-color: $color-btn-bg;
+
     i {
         padding-right: 6px;
     }
@@ -32,6 +33,6 @@ a {
     @include mq("tablet") {
         margin: 0;
         padding-right: 96px;
-        padding-left: 96px;        
+        padding-left: 96px;
     }
 }
