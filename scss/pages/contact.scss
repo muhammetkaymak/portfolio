@@ -1,0 +1,10 @@
+.Contact{
+    border: 1px solid red;
+    &-box{
+        text-align: center;
+        p{
+            padding-top: 25px;
+            padding-bottom: 45px;
+        }
+    }
+}
