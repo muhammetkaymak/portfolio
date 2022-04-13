@@ -1,0 +1,29 @@
+.Footer{
+    border-top: 1px solid $color-light-gray;
+    margin-top: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        @include mq("desktop") {
+            justify-content: space-between;
+            flex-direction: row;
+        }
+    }
+
+    &-buttons{
+        margin-bottom: 30px;
+        a{
+            margin-inline: 10px;
+            @include mq("desktop") {
+                margin-left: 40px;
+                margin-right: 0;
+            }
+            i{
+                font-size: 20px;
+            }
+        }
+    }
+}
